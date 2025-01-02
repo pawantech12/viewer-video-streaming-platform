@@ -38,7 +38,10 @@ const Navbar = ({ toggleSidebar, isOpen }) => {
       </div>
       <div className="w-fit">
         <button className="border border-zinc-200 px-4 py-3 rounded-lg text-zinc-700 hover:text-white hover:bg-primary-purple transition-colors ease-in-out duration-200">
-          <Link className="flex items-center gap-2 text-lg font-medium">
+          <Link
+            className="flex items-center gap-2 text-lg font-medium"
+            to="/login"
+          >
             <LuCircleUser className="w-5 h-5" />
             Login
           </Link>

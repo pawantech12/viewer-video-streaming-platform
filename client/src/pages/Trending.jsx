@@ -63,7 +63,7 @@ const Trending = () => {
       </h4>
       <div className="grid grid-cols-4 gap-5 mt-5">
         {[1, 2, 3, 4].map((video, index) => (
-          <Link key={index}>
+          <Link key={index} to={`/video/${index}`}>
             <div className="rounded-xl space-y-2">
               <div
                 className="relative group"

@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import ShortsPage from "./pages/ShortsPage.jsx";
 import Trending from "./pages/Trending.jsx";
+import Register from "./pages/Register.jsx";
+import Login from "./pages/Login.jsx";
+import VideoView from "./pages/VideoView.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,18 @@ const router = createBrowserRouter([
   {
     path: "/trending",
     element: <App element={<Trending />} />,
+  },
+  {
+    path: "/register",
+    element: <App element={<Register />} />,
+  },
+  {
+    path: "/login",
+    element: <App element={<Login />} />,
+  },
+  {
+    path: "/video/:videoId",
+    element: <App element={<VideoView />} />,
   },
 ]);
 

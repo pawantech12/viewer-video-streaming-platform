@@ -15,9 +15,9 @@ const Sidebar = ({ isOpen }) => {
   const isActive = (path) => location.pathname === path;
   return (
     <aside
-      className={` h-screen w-56  transform ${
+      className={` h-screen min-h-screen w-56  transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } transition-transform duration-300 ease-in-out border-r border-x-zinc-200 z-50 absolute left-0 bg-white`}
+      } transition-transform duration-300 ease-in-out border-r border-x-zinc-200 z-50 absolute left-0 bg-white flex flex-col`}
     >
       <div>
         <ul className="flex flex-col px-3 py-2">
@@ -121,7 +121,7 @@ const Sidebar = ({ isOpen }) => {
                 className="flex items-center gap-4 px-4 py-3 w-full text-zinc-700"
                 to={"/subscribed/profile"}
               >
-                <img src="./subscribed-profile.png" alt="subscribed profile" />
+                <img src="/subscribed-profile.png" alt="subscribed profile" />
                 <h4 className="font-medium ">Eleanor Pena</h4>
               </Link>
             </li>
@@ -134,7 +134,7 @@ const Sidebar = ({ isOpen }) => {
                 className="flex items-center gap-4 px-4 py-3 w-full text-zinc-700"
                 to={"/subscribed/profile"}
               >
-                <img src="./subscribed-profile.png" alt="subscribed profile" />
+                <img src="/subscribed-profile.png" alt="subscribed profile" />
                 <h4 className="font-medium ">Eleanor Pena</h4>
               </Link>
             </li>
@@ -147,7 +147,7 @@ const Sidebar = ({ isOpen }) => {
                 className="flex items-center gap-4 px-4 py-3 w-full text-zinc-700"
                 to={"/subscribed/profile"}
               >
-                <img src="./subscribed-profile.png" alt="subscribed profile" />
+                <img src="/subscribed-profile.png" alt="subscribed profile" />
                 <h4 className="font-medium ">Eleanor Pena</h4>
               </Link>
             </li>
@@ -160,7 +160,7 @@ const Sidebar = ({ isOpen }) => {
                 className="flex items-center gap-4 px-4 py-3 w-full text-zinc-700"
                 to={"/subscribed/profile"}
               >
-                <img src="./subscribed-profile.png" alt="subscribed profile" />
+                <img src="/subscribed-profile.png" alt="subscribed profile" />
                 <h4 className="font-medium ">Eleanor Pena</h4>
               </Link>
             </li>
